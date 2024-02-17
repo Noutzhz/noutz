@@ -1,39 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noutz</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/1105227184077029426/1204514626721681500/Novo_projeto_5_2E784F7.png?ex=65d502a9&is=65c28da9&hm=4e265d714035246f2e5e0030307b01987e2116268a649d7e4d380fb0093124c1&=&format=webp&quality=lossless&width=417&height=417">
-
-
-    <style>
-        /* Estilo para a div do aviso */
-        .aviso-idade {
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 14px;
-        }
-
-        /* Estilo para o botão de fechar */
-        .fechar {
-            cursor: pointer;
-            position: absolute;
-            top: 5px;
-            right: 5px;
-            color: #fff;
-            font-size: 14px;
-        }
-    </style>
 </head>
-
 <body>
     <header>
         <h1>Olá, eu sou Noutz 🌌</h1>
@@ -42,166 +15,47 @@
     <nav>
         <a href="#sobre">Sobre Mim 👨🏻‍🎓</a>
         <a href="#projetos">Projetos 📖</a>
-        <a href="#contato">Social Media 💬</a>
+        <a href="#contato">Contato 💬</a>
+        <a href="#spotify">NTZ 🍀</a>
+        <a href="supermario.html">Super Mario 🎮</a>
     </nav>
 
-    <section id="sobre">
+    <section id="sobre" class="section">
         <h2>Sobre Mim</h2>
-        <p id="idade"></p>
-        <p>Oi, eu sou o Noutz! Tenho <span id="idade-calc"></span> anos. Sou um desenvolvedor web apaixonado por tecnologia e programação. Moro em São Paulo e também faço música. Sou programador de HTML, CSS, JS, Python. Também sou dono de um studio de jogos, a Sea Studios, que é meu projeto mais recente. Também estou focado no desenvolvimento de IA e criação. Já fui um hacker ético com sistemas de open ports e segurança da computação na HackerOne e hoje só foco nos meus próprios projetos.</p>
+        <p>Oi, eu sou o Noutz! Sou um desenvolvedor web apaixonado por tecnologia e programação. Moro em São Paulo e também faço música.</p>
     </section>
 
-    <section id="projetos">
+    <section id="projetos" class="section">
         <h2>Projetos</h2>
-        <p>Aqui você pode listar alguns dos seus projetos mais relevantes. Inclua uma breve descrição de cada um.</p>
         <ul>
             <li><a href="https://github.com/Noutzhz/Password-Geretor" target="_blank">Password Geretor 🔏</a></li>
-            <p>Isso é um projeto bem básico onde gera uma senha para você usar em algum lugar.</p>
+            <p>Password Geretor e um gerador de senhas para usar em qualquer lugar.</p>
             <li><a href="https://github.com/Noutzhz/BotUser" target="_blank">BotUser 🧑🏻</a></li>
-            <p>fale com uma coonexao a outra anonimamente</p>
+            <p>BotUser e um codigo para falar com uma conexao a outra anonimamente</p>
         </ul>
     </section>
 
-    <section id="contato">
-        <h2>Social Media</h2>
+    <section id="spotify" class="section">
+        <h2>NTZ</h2>
+        <p>#NTZFromTheAmericasToTheWorld, meu mais novo projeto que leva a NTZ para o Mundo!
+        </p>
+        
+        <p>Oque e a NTZ? e o projeto grifed criado em sao paulo e agora no mundo</p>
+    </section>
+
+    <section id="contato" class="section">
+        <h2>Contato</h2>
         <p>Você pode falar comigo pelo meu Twitter, ver meus projetos mais novos no GitHub ou até mesmo me enviar uma doação pelo Buy Me a Coffee.</p>
         <ul>
             <li><a href="https://github.com/Noutzhz" target="_blank" class="github-link">GitHub</a></li>
             <li><a href="https://twitter.com/noutzkk" target="_blank" class="twitter-link">Twitter</a></li>
             <li><a href="https://www.buymeacoffee.com/noutz" target="_blank" class="buymeacoffee-link">Buy Me a Coffee</a></li>
+            <li><a href="hhttps://www.instagram.com/eaenoutz/" target="_blank" class="instagram-link">Instagram</a></li>
         </ul>
     </section>
 
-    <!-- Div do aviso de idade -->
-    <div class="aviso-idade" id="aviso-idade">
-        Fato Curioso, a cada dia que for meu aniversário que é 30 de novembro a minha idade aumenta aqui no site também
-        <span class="fechar" onclick="fecharAviso()">X</span>
-    </div>
-
-    <!-- Seção de Mini Jogos -->
-    <section id="minijogos">
-        <h2>Mini Jogos</h2>
-        <p>Aqui estão alguns mini jogos simples para você se divertir:</p>
-        <h3>Cara ou Coroa</h3>
-        <p>Escolha cara ou coroa e veja se você acerta!</p>
-        <button id="btn-cara-coroa" onclick="caraOuCoroa()">Jogar Cara ou Coroa</button>
-        <p id="resultado-cara-coroa"></p>
-
-        <h3>Tigrinho 🐯</h3>
-        <p>Jogue o Fortune Tiger e veja se você ganha ou perde dinheiro como ja dizia o tigrinho: joga vintao joga (casino fake)</p>
-        <button id="btn-fortune-tiger" onclick="fortuneTiger()">Jogar Fortune Tiger</button>
-        <p id="resultado-fortune-tiger"></p>
-
-        <h3>Foguetinho 🚀</h3>
-        <p>Lance o foguete e veja se ele decola ou explode!</p>
-        <form id="form-foguetinho">
-            <label for="valor-aposta-foguetinho">Valor da aposta:</label>
-            <input type="number" id="valor-aposta-foguetinho" name="valor-aposta-foguetinho" min="1" step="1" required>
-            <button type="submit" id="btn-lancar-foguetinho">Lançar Foguete</button>
-        </form>
-        <p id="resultado-foguetinho"></p>
-        <p id="saldo-foguetinho"></p>
-    </section>
-
-    <script>
-        // Função para calcular a idade
-        function calcularIdade() {
-            var dataNascimento = new Date('2009-11-30'); // Sua data de nascimento
-            var hoje = new Date();
-            var idade = hoje.getFullYear() - dataNascimento.getFullYear();
-            var mes = hoje.getMonth() - dataNascimento.getMonth();
-
-            if (mes < 0 || (mes === 0 && hoje.getDate() < dataNascimento.getDate())) {
-                idade--;
-            }
-
-            var aniversarioEsteAno = new Date(hoje.getFullYear(), dataNascimento.getMonth(), dataNascimento.getDate());
-            if (hoje >= aniversarioEsteAno) {
-                idade++;
-            }
-
-            document.getElementById('idade').innerHTML = "Tenho " + idade + " anos.";
-            document.getElementById('idade-calc').innerHTML = idade;
-        }
-
-        // Chamar a função para calcular a idade quando a página carregar
-        calcularIdade();
-
-        // Função para fechar o aviso de idade
-        function fecharAviso() {
-            var aviso = document.getElementById('aviso-idade');
-            aviso.style.display = 'none';
-        }
-
-        // Função para jogar Cara ou Coroa
-        function caraOuCoroa() {
-            var resultado = Math.random();
-            var resultadoTexto = "";
-
-            if (resultado < 0.5) {
-                resultadoTexto = "Cara";
-            } else {
-                resultadoTexto = "Coroa";
-            }
-
-            document.getElementById('resultado-cara-coroa').innerHTML = "Resultado: " + resultadoTexto;
-        }
-
-        // Função para jogar o Fortune Tiger
-        function fortuneTiger() {
-            var resultado = Math.random();
-            var resultadoTexto = "";
-            var dinheiro = 100000000; // Dinheiro inicial do jogador
-
-            if (dinheiro <= 0) {
-                // Redirecionar o jogador para o vídeo do YouTube
-                window.location.href = "https://www.youtube.com/watch?v=pjsK-_uiGLQ";
-                return; // Encerrar a função para evitar que o jogo continue após o redirecionamento
-            }
-
-            if (resultado < 0.5) {
-                // O jogador perde metade do dinheiro
-                dinheiro = dinheiro / 2;
-                resultadoTexto = "Você perdeu metade do seu dinheiro! Agora você tem " + dinheiro.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-            } else {
-                // O jogador ganha o dobro do dinheiro
-                dinheiro = dinheiro * 2;
-                resultadoTexto = "Parabéns! Você dobrou seu dinheiro! Agora você tem " + dinheiro.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-            }
-
-            document.getElementById('resultado-fortune-tiger').innerHTML = resultadoTexto;
-        }
-
-        // Função para jogar o Foguetinho
-        document.getElementById('form-foguetinho').addEventListener('submit', function (event) {
-            event.preventDefault(); // Evitar o envio do formulário
-
-            // Obter o valor da aposta
-            var valorApostaFoguetinho = parseInt(document.getElementById('valor-aposta-foguetinho').value);
-
-            // Gerar um número aleatório entre 1 e 100 (representando a chance do foguete explodir)
-            var chanceExplosao = Math.floor(Math.random() * 100) + 1;
-
-            // Definir a chance de explosão (por exemplo, 20%)
-            var chanceDeExplosao = 20;
-
-            // Verificar se o foguete explodiu
-            var fogueteExplodiu = chanceExplosao <= chanceDeExplosao;
-
-            // Atualizar o saldo do jogador com base nos resultados
-            var saldoAtualFoguetinho = parseInt(document.getElementById('saldo-foguetinho').textContent);
-            if (fogueteExplodiu) {
-                document.getElementById('resultado-foguetinho').textContent = 'O foguete explodiu! Você perdeu ' + valorApostaFoguetinho + ' reais.';
-                saldoAtualFoguetinho -= valorApostaFoguetinho;
-            } else {
-                document.getElementById('resultado-foguetinho').textContent = 'O foguete decolou! Você ganhou ' + valorApostaFoguetinho + ' reais.';
-                saldoAtualFoguetinho += valorApostaFoguetinho;
-            }
-
-            // Atualizar o saldo do jogador na tela
-            document.getElementById('saldo-foguetinho').textContent = 'Saldo atual: ' + saldoAtualFoguetinho + ' reais.';
-        });
-    </script>
+    <footer>
+        <p>&copy; 𝕹𝕿𝖅 ou NTZ, Noutz ou quais quer outras marcas são de propiedade autoral.</p>
+    </footer>
 </body>
-
 </html>

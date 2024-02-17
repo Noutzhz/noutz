@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles2.css">
+  <link rel="icon" href="./src/img/mario.gif">
+  <title>Noutz - Super Mario Project</title>
+</head>
+<body>
+
+  <div class="game-board">
+    <img class="mario" src="./src/img/mario.gif" alt="mario">
+    <img class="pipe" src="./src/img/pipe.png" alt="tubo">
+    <img class="clouds" src="./src/img/clouds.png" alt="nuvem">
+    <button class="start" onclick="startGame()">Start</button>
+  </div>
+
+  <div class="game-over">
+    <h1>Game Over :(</h1>
+    <button onclick="restartGame()">Reiniciar</button>
+    <a href="index.html">Voltar para a página inicial</a>
+</div>
+  
+</body>
+<script src="scripts.js"></script>
+</html>
